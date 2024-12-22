@@ -1,4 +1,5 @@
-import { CalendlyButton } from '@/components/calendly/calendly-button';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export const CalendlySection = () => {
   return (
@@ -8,7 +9,9 @@ export const CalendlySection = () => {
         <p className="text-xl mb-8 max-w-2xl mx-auto">
           Book a free consultation with our experts to discuss your educational and travel needs
         </p>
-        <CalendlyButton />
+          <Button asChild variant="secondary" size="lg">
+          <Link href="/contact">Schedule Consultation</Link>
+        </Button>
       </div>
     </section>
   );
